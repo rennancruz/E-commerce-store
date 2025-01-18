@@ -6,6 +6,10 @@ This is the back-end for an e-commerce application. It provides a RESTful API fo
 ## Preview
 For a preview of how these APIs are being called, please refer to the [img](/img/) folder, which includes all screenshots from the APIs being called.
 
+
+https://github.com/user-attachments/assets/ab57a45b-d24b-4b05-b287-34e0c681c76a
+
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
