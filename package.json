@@ -1,0 +1,20 @@
+{
+    "name": "E-commerce-store",
+    "version": "1.0.0",
+    "description": "E-commerce store built with Node.js, Sequelize, and PostgreSQL.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "watch": "nodemon server.js",
+      "seed": "node seeds/index.js"
+    },
+    "dependencies": {
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "pg": "^8.11.3",
+      "sequelize": "^6.6.5"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.15"
+    }
+  }
