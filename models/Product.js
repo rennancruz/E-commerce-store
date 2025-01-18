@@ -3,6 +3,7 @@ const sequelize = require("../config/connection");
 
 class Product extends Model {}
 
+// Define Product schema
 Product.init(
   {
     id: {

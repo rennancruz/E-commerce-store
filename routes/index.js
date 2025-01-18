@@ -1,14 +1,10 @@
-const router = require("express").Router();
-const categoryRoutes = require("./api/category-routes");
-const productRoutes = require("./api/product-routes");
-const tagRoutes = require("./api/tag-routes");
+const router = require('express').Router();
+const apiRoutes = require('./api');
 
-router.use("/categories", categoryRoutes);
-router.use("/products", productRoutes);
-router.use("/tags", tagRoutes);
+router.use('/api', apiRoutes);
 
 router.use((req, res) => {
-  res.status(404).send("Not Found");
+  res.send("<h1>Oops! Looks like you're trying to use the wrong route. Please review the correct ones as follows: category ; products ; tags</h1>")
 });
 
 module.exports = router;

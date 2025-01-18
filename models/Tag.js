@@ -3,6 +3,7 @@ const sequelize = require("../config/connection");
 
 class Tag extends Model {}
 
+// Define Tag schema
 Tag.init(
   {
     id: {

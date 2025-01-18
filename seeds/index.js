@@ -5,27 +5,17 @@ const seedProductTags = require("./product-tag-seeds");
 const sequelize = require("../config/connection");
 
 const seedAll = async () => {
-  try {
-    await sequelize.sync({ force: true });
-    console.log("Database synced");
-
-    await seedCategories();
-    console.log("Categories seeded");
-
-    await seedProducts();
-    console.log("Products seeded");
-
-    await seedTags();
-    console.log("Tags seeded");
-
-    await seedProductTags();
-    console.log("ProductTags seeded");
-
-    process.exit(0);
-  } catch (error) {
-    console.error("Seeding failed", error);
-    process.exit(1);
-  }
+  await sequelize.sync({ force: true });
+  console.log("\nDatabase Synced\n");
+  await seedCategories();
+  console.log("\nCategories Seeded\n");
+  await seedProducts();
+  console.log("\nProducts Seeded\n");
+  await seedTags();
+  console.log("\nTags Seeded\n");
+  await seedProductTags();
+  console.log("\nProduct Tags Seeded\n");
+  process.exit(0);
 };
 
 seedAll();
