@@ -3,6 +3,9 @@
 ## Description
 This is the back-end for an e-commerce application. It provides a RESTful API for managing categories, products, and tags in a PostgreSQL database. The application is built using **Express.js**, **Sequelize**, and **PostgreSQL**, and allows users to perform CRUD operations for categories, products, and tags.
 
+## Preview
+For a preview of how these APIs are being called, please refer to the [img](/img/) folder, which includes all screenshots from the APIs being called.
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
